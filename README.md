@@ -6,12 +6,14 @@ Making the frameworks build on OS X wasn't too difficult, I just followed instru
 
 Slightly more involved was making some API modifications to allow passing a certificate & private key (via PKCS12 file) to the MQTT routines vs. requiring they load from the keychain.  The setup process is documented in main.swift and is repeated here:
 
+```
 // The PKCS12 file is created from the AWS IoT certificate and private key as follows:
 // openssl pkcs12 -export -in certificate.pem.crt -inkey private.pem.key -out awsiot-identity.p12
 // The file *must* be created with a password or SecPKCS12Import() will fail.
 // Then run `base64 awsiot-identity.p12` and copy the base 64 output into pkcs12IdentityDataBase64 below
+```
 
-To install, clone this project and run init-submodule.sh.
+To install, clone this project and run `init-submodule.sh`.
 
 Some quirks:
 
