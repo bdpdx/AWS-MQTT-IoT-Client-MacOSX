@@ -1,3 +1,4 @@
 [submodule "aws-sdk-ios"]
 	path = aws-sdk-ios
 	url = https://github.com/bdpdx/aws-sdk-ios.git
+	branch = brian/port-to-macos

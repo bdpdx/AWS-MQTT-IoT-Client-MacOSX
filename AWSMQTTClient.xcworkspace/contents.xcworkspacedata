@@ -5,6 +5,6 @@
       location = "group:AWSMQTTClient.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:../../../../github/aws-sdk-ios/AWSiOSSDKv2.xcodeproj">
+      location = "group:aws-sdk-ios/AWSiOSSDKv2.xcodeproj">
    </FileRef>
 </Workspace>
