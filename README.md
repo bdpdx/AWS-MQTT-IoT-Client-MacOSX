@@ -20,3 +20,5 @@ Some quirks:
 - In case you didn't read the above, the PKCS12 file *must* be created with a password.
 - You will need a valid signing identity to sign the various frameworks such as AWSCore/AWSIoT or the binary won't load.  For each framework you use, open the framework target settings in the AWSiOSSDKv2 project, enable automatic signing, and use your Mac OS X developer credentials from Apple.
 - This project only shows how to connect to AWS IoT.  For MQTT operations such as subscribe/publish, see the AWS IoT Sample app here: https://github.com/awslabs/aws-sdk-ios-samples
+- My changes to aws-sdk-ios are in the brian/port-to-macos branch in my fork of the aws-sdk-ios repo.  I do not intend to merge them into master of my fork.  This project automatically selects the correct branch in the submodule.
+- Finally, and most importantly, My MacOS "port" of the aws-ios-sdk is really just what I could hack together in about half a day... I needed to get this working fast so I pulled in files on an as-needed basis and took a slash-and-burn approach wherever possible.  It works, but it ain't pretty.  Caveat emptor.
