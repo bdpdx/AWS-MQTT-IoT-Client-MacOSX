@@ -1,0 +1,340 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D3A7CF742496033F00781F37 /* shell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A7CF732496033F00781F37 /* shell.swift */; };
+		D3CD9AF624958FE200170FD1 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CD9AF524958FE200170FD1 /* main.swift */; };
+		D3CD9B072495940A00170FD1 /* AWSCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3CD9B052495940A00170FD1 /* AWSCore.framework */; };
+		D3CD9B082495940A00170FD1 /* AWSCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D3CD9B052495940A00170FD1 /* AWSCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D3CD9B092495940A00170FD1 /* AWSIoT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3CD9B062495940A00170FD1 /* AWSIoT.framework */; };
+		D3CD9B0A2495940A00170FD1 /* AWSIoT.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D3CD9B062495940A00170FD1 /* AWSIoT.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D3CD9AF024958FE200170FD1 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		D3CD9B0B2495940A00170FD1 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D3CD9B082495940A00170FD1 /* AWSCore.framework in Embed Frameworks */,
+				D3CD9B0A2495940A00170FD1 /* AWSIoT.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		D3A7CF6B2495D95800781F37 /* awsconfiguration.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
+		D3A7CF6F2495EB4200781F37 /* AWSCognito.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AWSCognito.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3A7CF722496000A00781F37 /* AWSMQTTClient.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AWSMQTTClient.entitlements; sourceTree = "<group>"; };
+		D3A7CF732496033F00781F37 /* shell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shell.swift; sourceTree = "<group>"; };
+		D3CD9AF224958FE200170FD1 /* AWSMQTTClient */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AWSMQTTClient; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3CD9AF524958FE200170FD1 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		D3CD9B04249590A400170FD1 /* AWSMQTTClient-BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AWSMQTTClient-BridgingHeader.h"; sourceTree = "<group>"; };
+		D3CD9B052495940A00170FD1 /* AWSCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AWSCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3CD9B062495940A00170FD1 /* AWSIoT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AWSIoT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3CE04932495BD5B00096F4E /* AWSCognito.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AWSCognito.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D3CD9AEF24958FE200170FD1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3CD9B072495940A00170FD1 /* AWSCore.framework in Frameworks */,
+				D3CD9B092495940A00170FD1 /* AWSIoT.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D3CD9AE924958FE200170FD1 = {
+			isa = PBXGroup;
+			children = (
+				D3CD9AF424958FE200170FD1 /* AWSMQTTClient */,
+				D3CD9AF324958FE200170FD1 /* Products */,
+				D3CD9AFC2495902E00170FD1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D3CD9AF324958FE200170FD1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D3CD9AF224958FE200170FD1 /* AWSMQTTClient */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D3CD9AF424958FE200170FD1 /* AWSMQTTClient */ = {
+			isa = PBXGroup;
+			children = (
+				D3A7CF722496000A00781F37 /* AWSMQTTClient.entitlements */,
+				D3CD9AF524958FE200170FD1 /* main.swift */,
+				D3A7CF732496033F00781F37 /* shell.swift */,
+				D3CD9B04249590A400170FD1 /* AWSMQTTClient-BridgingHeader.h */,
+				D3A7CF6B2495D95800781F37 /* awsconfiguration.json */,
+			);
+			path = AWSMQTTClient;
+			sourceTree = "<group>";
+		};
+		D3CD9AFC2495902E00170FD1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D3A7CF6F2495EB4200781F37 /* AWSCognito.framework */,
+				D3CE04932495BD5B00096F4E /* AWSCognito.framework */,
+				D3CD9B052495940A00170FD1 /* AWSCore.framework */,
+				D3CD9B062495940A00170FD1 /* AWSIoT.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D3CD9AF124958FE200170FD1 /* AWSMQTTClient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3CD9AF924958FE200170FD1 /* Build configuration list for PBXNativeTarget "AWSMQTTClient" */;
+			buildPhases = (
+				D3CD9AEE24958FE200170FD1 /* Sources */,
+				D3CD9AEF24958FE200170FD1 /* Frameworks */,
+				D3CD9AF024958FE200170FD1 /* CopyFiles */,
+				D3CD9B0B2495940A00170FD1 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AWSMQTTClient;
+			productName = AWSMQTTClient;
+			productReference = D3CD9AF224958FE200170FD1 /* AWSMQTTClient */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D3CD9AEA24958FE200170FD1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = "Balance Software";
+				TargetAttributes = {
+					D3CD9AF124958FE200170FD1 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+				};
+			};
+			buildConfigurationList = D3CD9AED24958FE200170FD1 /* Build configuration list for PBXProject "AWSMQTTClient" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D3CD9AE924958FE200170FD1;
+			productRefGroup = D3CD9AF324958FE200170FD1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D3CD9AF124958FE200170FD1 /* AWSMQTTClient */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D3CD9AEE24958FE200170FD1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3A7CF742496033F00781F37 /* shell.swift in Sources */,
+				D3CD9AF624958FE200170FD1 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D3CD9AF724958FE200170FD1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D3CD9AF824958FE200170FD1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		D3CD9AFA24958FE200170FD1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = AWSMQTTClient/AWSMQTTClient.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AQRYCDNYE7;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AWSMQTTClient/AWSMQTTClient-BridgingHeader.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		D3CD9AFB24958FE200170FD1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = AWSMQTTClient/AWSMQTTClient.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AQRYCDNYE7;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AWSMQTTClient/AWSMQTTClient-BridgingHeader.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D3CD9AED24958FE200170FD1 /* Build configuration list for PBXProject "AWSMQTTClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3CD9AF724958FE200170FD1 /* Debug */,
+				D3CD9AF824958FE200170FD1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D3CD9AF924958FE200170FD1 /* Build configuration list for PBXNativeTarget "AWSMQTTClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3CD9AFA24958FE200170FD1 /* Debug */,
+				D3CD9AFB24958FE200170FD1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D3CD9AEA24958FE200170FD1 /* Project object */;
+}
